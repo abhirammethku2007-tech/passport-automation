@@ -1,0 +1,16 @@
+{
+  "name": "passport-automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Passport automation educational demo with persistent applicant and officer workflows",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "start": "node backend/server.js",
+    "check": "node --check backend/server.js && node --check backend/vercel-api.js && node --check api/[...path].js"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.15.15"
+  }
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Applicant Dashboard | Passport Automation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">◎</span>Passport Automation</a>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="applicant-dashboard.html" aria-current="page">Dashboard</a>
+    <a href="my-applications.html">My applications</a>
+    <a href="apply.html">Apply</a>
+    <span id="userNav"></span>
+  </nav>
+</header>
+<main>
+  <section class="dashboard-heading">
+    <p class="eyebrow">Applicant portal</p>
+    <h1 class="page-title">Your dashboard</h1>
+    <p class="sub">Start an application or pick up where you left off.</p>
+    <div class="actions">
+      <a class="btn" href="apply.html">Start a new application <span aria-hidden="true">→</span></a>
+      <a class="btn secondary" href="my-applications.html">View all applications</a>
+    </div>
+  </section>
+  <div id="message" class="message" role="status" aria-live="polite"></div>
+  <section id="applicantSummary" class="summary-grid" aria-label="Application summary">
+    <div class="panel">Loading your dashboard…</div>
+  </section>
+  <section>
+    <h2 class="section-heading">Recent applications</h2>
+    <div id="recentApplications" class="application-list" aria-live="polite"></div>
+  </section>
+</main>
+<footer>Educational prototype only · Do not enter real identity details</footer>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Officer Sign In | Passport Automation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">◎</span>Passport Automation</a>
+  <nav class="nav"><a href="index.html">Home</a><a href="login.html">Applicant sign in</a></nav>
+</header>
+<main>
+  <section class="form-card">
+    <p class="eyebrow">Officer workspace</p>
+    <h1 class="page-title">Officer sign in</h1>
+    <p class="sub">This separate sign-in is for passport demo administrators.</p>
+    <div id="message" class="message" role="status" aria-live="polite"></div>
+    <form id="adminLoginForm">
+      <label class="full">Officer email<input name="email" type="email" required autocomplete="username"></label>
+      <label class="full">Password<input name="password" type="password" required autocomplete="current-password"></label>
+      <div class="full"><button class="btn" type="submit">Sign in to dashboard</button></div>
+    </form>
+  </section>
+</main>
+<footer>Officer tools are for this local educational demo only</footer>
+<script src="app.js"></script>
+</body>
+</html>

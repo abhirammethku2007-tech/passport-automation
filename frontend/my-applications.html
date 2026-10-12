@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>My Applications | Passport Automation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">◎</span>Passport Automation</a>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="applicant-dashboard.html">Dashboard</a>
+    <a href="apply.html">New application</a>
+    <a href="track.html">Track</a>
+    <span id="userNav"></span>
+  </nav>
+</header>
+<main>
+  <section class="dashboard-heading">
+    <p class="eyebrow">Applicant portal</p>
+    <h1 class="page-title">Your applications</h1>
+    <p class="sub">Your applications stay saved in the database when you sign out and return.</p>
+    <a class="btn" href="apply.html">Start a new application <span aria-hidden="true">→</span></a>
+  </section>
+  <div id="message" class="message" role="status" aria-live="polite"></div>
+  <section id="myApplications" class="application-list" aria-live="polite">
+    <div class="panel">Loading your applications…</div>
+  </section>
+</main>
+<footer>Educational prototype only · Do not enter real identity details</footer>
+<script src="app.js"></script>
+</body>
+</html>

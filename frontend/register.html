@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Create Applicant Account | Passport Automation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">◎</span>Passport Automation</a>
+  <nav class="nav"><a href="index.html">Home</a><a href="login.html">Applicant sign in</a></nav>
+</header>
+<main>
+  <section class="form-card">
+    <p class="eyebrow">Applicant portal</p>
+    <h1 class="page-title">Create your account</h1>
+    <p class="sub">Your account and demo applications are saved in the local SQLite database.</p>
+    <div id="message" class="message" role="status" aria-live="polite"></div>
+    <form id="registerForm">
+      <label>Full name<input name="name" required autocomplete="name" maxlength="100"></label>
+      <label>Email address<input name="email" type="email" required autocomplete="email"></label>
+      <label>Phone number<input name="phone" type="tel" required pattern="[0-9+\(\)\x20\x2d]{7,30}" autocomplete="tel"></label>
+      <label>Password<input name="password" type="password" minlength="8" maxlength="128" required autocomplete="new-password"><span class="help">Use at least 8 characters. Choose sample credentials for this demo.</span></label>
+      <div class="full"><button class="btn" type="submit">Create account</button> <a href="login.html">Already registered? Sign in</a></div>
+    </form>
+  </section>
+</main>
+<footer>Educational prototype only · Do not enter real identity details</footer>
+<script src="app.js"></script>
+</body>
+</html>
