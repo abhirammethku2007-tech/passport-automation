@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node backend/server.js",
-    "check": "node --check backend/server.js && node --check backend/vercel-api.js && node --check api/[...path].js"
+    "check": "node --check backend/server.js && node --check backend/vercel-api.js && node --check api/[...path].js && node --check \"api/my/[...path].js\" && node --check \"api/admin/[...path].js\""
   },
   "dependencies": {
     "@libsql/client": "^0.15.15"
